@@ -1,20 +1,24 @@
 import React from 'react'; 
-
+import Images from "../assets/img";
+import { AiFillLinkedin } from 'react-icons/ai';
+import { AiFillFacebook } from 'react-icons/ai';
+import { FaInstagramSquare } from 'react-icons/fa';
+import { AiFillTwitterSquare } from 'react-icons/ai';
 
 function Footer() {
   return (
     <section className=''>
       <div className='row cus-footer'>
         <div className='text-light'>
-          <img src='Images/Logo-2.jpg' alt=''></img>
+          <img src={Images.Logo_2} alt=''></img>
       </div>
 
         <div>
           <h4 className='text-light'>More Links</h4>
-          <a className='text-light' href='Privacy Policy Terms & Conditions'>Privacy Policy <br/>
-            Terms & Conditions</a>
+          <a className='text-light' href='Privacy Policy Terms & Conditions'>Privacy Policy <br/></a>
+            <a className='text-light' href='Privacy Policy Terms & Conditions'>Terms & Conditions</a>
         </div>
-        <div className='text-light'>
+        <div className='text-light mt-4'>
           <h4>
             Contact us
           </h4>
@@ -26,11 +30,15 @@ function Footer() {
         </div>
         <div className='text-light'>
           <h4>
-            Reach us at
+            Reach us at <br/>
+            <AiFillLinkedin/>
+            <AiFillFacebook/>
+            <AiFillTwitterSquare/>
+            <FaInstagramSquare/>
           </h4>
         </div>
       </div>
-        <div className='text-secondary text-small custom-footer border-top'>
+        <div className='text-secondary custom-footer border-top'>
         <h4>
         ©  Pixel io Technologies 2022
         </h4>

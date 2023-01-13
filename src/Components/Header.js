@@ -1,6 +1,8 @@
 import React from 'react';
 import './style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Images from "../assets/img";
+import { Link } from 'react-router-dom';
 
 
 function Header() {
@@ -10,28 +12,46 @@ function Header() {
         <div className="row">
           <div className="col-sm-12">
             <nav className="navbar navbar-expand-lg ">
-            <img className='ml-5 mt-5' src='Images/logo-1.jpg' width='170px' height='45px' alt='' />
+              <img className='ml-5 mt-5' src={Images.Logo_1}  width='170px' height='45px' alt='' />
 
-              <div className="collapse navbar-collapse justify-content-end mt-3 d-grid">
+              <div className="collapse navbar-collapse justify-content-end mt-3 mr-5">
                 <ul className="navbar-nav">
-                  <li className="nav-item">
-                    <a className="nav-link text-dark" href="#Home">Home<span class="sr-only"></span></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link text-dark" href="#Our vision">Our vision<span class="sr-only"></span></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link text-dark" href="#services">Services<span class="sr-only"></span></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link text-dark" href="#Portfolio">Portfolio<span class="sr-only"></span></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link text-dark" href="#careers">Careers<span class="sr-only"></span></a>
-                  </li>
-                  <li className="nav-item">
-                    <a className="nav-link text-dark" href="Contact us">Contact us<span class="sr-only"></span></a>
-                  </li>
+                  <Link to={{
+                    pathname: "/",
+                  }} className="nav-item text-dark mt-2 Home mr-3">
+                    Home
+                  </Link>
+
+                  <Link to={{
+                    pathname: "/",
+                  }} className="nav-item text-dark mt-2">
+                    Our vision
+                  </Link>
+
+                  <Link to={{
+                    pathname: "/",
+                  }} className="nav-item text-dark mt-2">
+                    Services
+                  </Link>
+
+                  <Link to={{
+                    pathname: "/",
+                  }} className="nav-item text-dark mt-2">
+                    Portfolio
+                  </Link>
+
+                  <Link to={{
+                    pathname: "/Hire",
+                  }} className="nav-item text-dark mt-2">
+                    Hire Now!
+                  </Link>
+
+                  <Link to={{
+                    pathname: "/Contact",
+
+                  }} className="nav-item text-dark mt-2">
+                    Contact
+                  </Link>
                 </ul>
 
               </div>

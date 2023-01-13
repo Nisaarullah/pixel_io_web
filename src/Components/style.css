@@ -7,10 +7,16 @@ font-family: 'Glegoo';
 font-style: normal;
 }
 
+.cus-card
+{
+    background: linear-gradient(180deg, #F5F5F5 0%, #FFFFFF 100%);
+    border: 1px solid rgba(175, 175, 175, 0.74);
+border-radius: 11.3498px;
+}
 
 .navbar-nav{
     display: flex;
-    gap: 2rem;
+    gap: 4rem;
     font-size: 20px;
     margin-top: 30px;
 }
@@ -31,7 +37,8 @@ html {
    }
    
    a {
-    text-decoration: none;
+    text-decoration: overline;
+
     color: black;
    } 
 #Home{
@@ -64,9 +71,6 @@ html {
     height: 60px;
 }
 
-#careers{
-    height: 100vh;
-}
 .cus-footer{
     display: flex;
     justify-content: space-evenly;
@@ -88,6 +92,99 @@ html {
 
 .derd
 {
-    font-size:70px;
+font-family: 'Glegoo';
+font-style: normal;
+font-weight: 500;
+font-size: 70px;
+line-height: 58px;
+}
+
+    
+
+.perp{
+ 
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 900px;
+    gap: 1rem;
+      
+}
+
+.block{
+  width: 918px;
+height: 52px;
+left: 299px;
+top: 913px;
+margin-top: 2rem;
+margin-left: 8rem;
+background: #0D0D0D;
+}
+
+.input-size{
+    font-size: 25px;
+    width: 900px;
+    height: 80px;
+    outline: none;
+    
+}
+.Heading_size{
+    margin-right:23rem;
+    font-size: 35px;
+
+}
+.Cus_Contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    
+}
+.Contact_Info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: 4rem;
+    width: 451px;
+height: 565px;
+left: 80px;
+top: 176px;
+background: #0D0D0D;
+    
+    
+
+}
+.Contact_Us{
+    align-items: center;
+    justify-content: center;
+    width: 805px;
+height: 565px;
+left: 531px;
+top: 177px;
+
+background: #F5F5F5;;
+mix-blend-mode: normal;
+
+}
+.input-size_2{
+    font-size: 25px;
+    width: 680px;
+    height: 90px;
+    outline: none;
+    margin-left: 2rem;
+    margin-top: 1rem;
+
+}
+.Contact_btn{
+    width: 680.37px;
+height: 52.29px;
+left: 593px;
+top: 607px;
+margin-left: 3rem;
+margin-top: 2rem;
+
 
 }
